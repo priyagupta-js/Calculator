@@ -1,0 +1,42 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    min-width:200vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color:#3B4664;
+}
+
+.screen{
+    width:250px;
+    height: 50px;
+    font-size: 20px;
+    padding: 4px 4px;
+    /* background-color: #3B4664; */
+    /* color: #fff; */
+}
+
+.buttons{
+    height: 45px;
+}
+
+.btn{
+    width: 100%;
+    padding: 10px 20px;
+    font-size:20px;
+}
+
+.equal {
+    background-color: #D13F30;
+    border:1px solid #F06D5B;
+    color: #fff;
+}

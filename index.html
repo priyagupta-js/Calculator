@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <!-- using table -->
+    <div class="container">
+      <input type="text" class="screen" id="screen" placeholder="0"/>
+    <table>
+      <tr class="buttons">
+        <td><input type="button" value="7" class="btn number" onclick="display('7')" id="seven"/></td>
+        <td><input type="button" value="8" class="btn number" onclick="display('8')" id="eight"/></td>
+        <td><input type="button" value="9" class="btn number" onclick="display('9')" id="nine"/></td>
+        <td><input type="button" value="Del" class="btn delete" onclick="clear()" id="del"/></td>
+      </tr>
+      <tr  class="buttons">
+        <td><input type="button" value="4" class="btn number" onclick="display('4')" id="four"/></td>
+        <td><input type="button" value="5" class="btn number" onclick="display('5')" id="five"/></td>
+        <td><input type="button" value="6" class="btn number" onclick="display('6')" id="six"/></td>
+        <td><input type="button" value="+" class="btn symbol" onclick="display('+')" id="plus"/></td>
+      </tr>
+  
+      <tr  class="buttons">
+        <td><input type="button" value="1" class="btn number" onclick="display('1')" id="one"/></td>
+        <td><input type="button" value="2" class="btn number" onclick="display('2')" id="two"/></td>
+        <td><input type="button" value="3" class="btn number" onclick="display('3')" id="btn three"/></td>
+        <td><input type="button" value="-" class="btn symbol" onclick="display('-')" id="btn minus"/></td>
+      </tr>
+      
+      
+      <tr  class="buttons">
+        <td><input type="button" value="." class="btn symbol" onclick="display('.')" id="symbol" /></td>
+        <td><input type="button" value="0" class="btn number" onclick="display('0')" id="number zero"/></td>
+        <td><input type="button" value="/" class="btn symbol" onclick="display('/')" id="btn quoient"/></td>
+        <td><input type="button" value="*" class="btn symbol" onclick="display('*')" id="btn multiply"/></td>
+      </tr>
+      
+      
+      <tr  class="buttons">
+        <td colspan="2"><input type="button" value="AC"  class="btn clear" /></td>
+        <td colspan="2" ><input type="button" value="="    class="btn equal" /></td>
+      </tr>
+
+    </table>
+
+   
+  </div>
+  <script src="index.js"></script>
+  </body>
+</html>
