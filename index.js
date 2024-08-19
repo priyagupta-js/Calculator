@@ -27,9 +27,10 @@ function allClear()
 {
 screen.value = 0;
 }
-// function Del(){
+function Del(){
+    screen.value = screen.value.slice(0,-1);
+    
+}
+function addition(){
 
-// }
-// function addition(){
-
-// }
+}
