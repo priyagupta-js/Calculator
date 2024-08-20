@@ -14,6 +14,7 @@ let zero = document.getElementById("zero");
 // let allClear = document.getElementById("allClear");
 // onclick function added to each element ; passed the number as argument 
 // append the value to the value of screen
+
 function display(val){
 
 // screen.value = one.value ;
