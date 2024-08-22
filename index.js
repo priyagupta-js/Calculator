@@ -26,7 +26,7 @@ screen.value +=val;
 // when clicked on the AC button , all the contents should be removed
 function allClear()
 {
-screen.value = 0;
+screen.value = "";
 }
 function Del(){
     screen.value = screen.value.slice(0,-1);
