@@ -1,27 +1,28 @@
+let string= "";
+let display = document.querySelector(".screen");
+let buttons = document.querySelectorAll(".button");
 
-let buttons = document.querySelectorAll("input");
+Array.from(buttons).forEach((button)=>{
+button.addEventListener('click' , (e)=>{
+    if (e.target.innerHTML == "=")
+    {
+        string = eval(string);
+        display.value = string;
+    }
+    else if (e.target.innerHTML == "Del")
+    {
+        string = display.value.slice(0,-1);
+        display.value =string;
+    }
+    else if (e.target.innerHTML == "AC")
+        {
+            display.value ="";
+        }
+    else
+    {
+        string = string + e.target.innerHTML;
+        display.value = string;
+    }
 
-// one.addEventListener("click" , addition());
-
-function display(val){
-
-// screen.value = one.value ;
-// screen.value = two.value;
-
-screen.value +=val;
-}
-
-// when clicked on the AC button , all the contents should be removed
-function allClear()
-{
-screen.value = "";
-}
-
-// delete the last element 
-function Del(){
-    screen.value = screen.value.slice(0,-1);
-    
-}
-function addition(){
-console.log("Bye!")
-}
+});
+});
