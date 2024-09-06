@@ -5,6 +5,10 @@ let buttons = document.querySelectorAll(".button");
 // symbols
 let plus = document.getElementById("btn");
 let minus = document.getElementById("btn");
+let multi = document.getElementById("btn");
+let divide = document.getElementById("btn");
+let mod =  document.getElementById("btn");
+
 
 // Array.from(buttons).forEach((button)=>{
 // button.addEventListener('click' , (e)=>{
